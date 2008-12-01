@@ -4,12 +4,12 @@ MySperql version 1.00
 MySperql enables sql statement execution (through DBI to MySQL) 
 with one line of perl code.
 
-Note: in order to run "make test", you must first edit the 
-connection parameters at the top of the test file: 
+Note: The test script has been reduced to non-dependent tests. 
+You can edit the variables at the top of the script once installed.
   
   t/MySperql.t
 
-You must also have an active account on the localhost.
+You must also have an active MySQL account.
 
 INSTALLATION
 

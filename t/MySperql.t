@@ -2,8 +2,7 @@
 # `make test'. After `make install' it should work as `perl MySperql.t'
 
 #########################
-# Change these vars 
-# or test will not work  
+# Change these vars and extend the exit below for testing
 
 $db    = 'mydb';
 $user  = 'myuser';
@@ -15,9 +14,13 @@ $table = 'mytable';
 
 use DBI;
 use DBIx::MySperql qw(DBConnect SQLExec GetFieldNames $dbh);
-use Test::More tests => 4;
+#use Test::More tests => 4;
+use Test::More tests => 1;
 
 BEGIN { use_ok('DBIx::MySperql') };
+
+exit;
+__END__
 
 #########################
 
@@ -42,5 +45,4 @@ print $text;
 
 ok($text, 'Table Select');
 
-exit;
 

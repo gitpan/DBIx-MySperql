@@ -14,7 +14,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw(DBConnect SQLExec SQLExecute SQLParse SQLFetc
 our @EXPORT_OK   = qw(DBConnect SQLExec SQLExecute SQLParse SQLFetch GetRowCount GetColumnCount GetFieldNames IsHandle);
 our @EXPORT      = qw($dbh);
 
-our $VERSION     = '1.00';
+our $VERSION     = '1.01';
 
 sub DBConnect {
 	my %parms = @_;
